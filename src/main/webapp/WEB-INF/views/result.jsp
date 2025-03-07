@@ -73,6 +73,62 @@
         .btn:hover {
             background-color: #004d40;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .weather-info {
+                font-size: 1.2em;
+            }
+
+            .temp {
+                font-size: 2em;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+            }
+
+            .details p {
+                font-size: 1em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .weather-info {
+                font-size: 1em;
+            }
+
+            .temp {
+                font-size: 1.8em;
+            }
+
+            .details p {
+                font-size: 0.9em;
+            }
+
+            .btn {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body>
