@@ -9,7 +9,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-image: url('<c:url value="/images/homeimage.jpg" />'); /* Relative path to local image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,7 +21,7 @@
         }
 
         .container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
             border-radius: 8px;
             padding: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

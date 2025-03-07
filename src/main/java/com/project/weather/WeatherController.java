@@ -29,10 +29,4 @@ public class WeatherController {
             return "home";  // Returns to home page in case of an error
         }
     }
-
-    // External redirect to another page (for example, Google)
-    @RequestMapping("/visitgoogle")
-    public String goGoogle() {
-        return "redirect:https://facebook.com";  // Redirects to Facebook
-    }
 }
