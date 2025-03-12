@@ -27,11 +27,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 500px;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
             color: #333;
+            margin-bottom: 20px;
         }
 
         .form-group {
@@ -61,6 +62,7 @@
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-bottom: 15px;
         }
 
         button:hover {
@@ -72,6 +74,49 @@
             font-size: 0.9em;
             text-align: center;
             margin-top: 15px;
+        }
+
+        /* Separate box for currency exchange link */
+        .currency-container {
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .currency-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #4CAF50;
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 2px solid #4CAF50;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            animation: flash 1.5s infinite alternate;
+        }
+
+        @keyframes flash {
+            0% {
+                background-color: #fff;
+                color: #4CAF50;
+            }
+            50% {
+                background-color: #4CAF50;
+                color: #fff;
+            }
+            100% {
+                background-color: #fff;
+                color: #4CAF50;
+            }
+        }
+
+        .currency-link:hover {
+            background-color: #4CAF50;
+            color: #fff;
         }
 
         /* Responsive Design */
@@ -112,6 +157,11 @@
                 font-size: 0.9em;
                 padding: 8px;
             }
+
+            .currency-link {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
         }
     </style>
 </head>
@@ -127,6 +177,14 @@
             <button type="submit">Get Weather</button>
         </form>
         <p class="error-message">${error}</p>
+    </div>
+
+    <!-- Separate Box for Currency Exchange App Link -->
+    <div class="currency-container">
+        <h2>Currency Exchange App</h2>
+        <a class="currency-link" href="${pageContext.request.contextPath}/currencyExchangeHome">
+            Would you like to try my currency exchange app as well?
+        </a>
     </div>
 
 </body>

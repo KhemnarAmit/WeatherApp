@@ -34,13 +34,13 @@
 			<artifactId>spring-core</artifactId>
 			<version>5.3.28</version>
 		</dependency>
-	   <dependency>
-        <groupId>javax.servlet.jsp.jstl</groupId>
-        <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-        <version>1.2.1</version>
-        <scope>provided</scope>
-    </dependency>
- 
+        <dependency>
+   			 <groupId>javax.servlet.jsp.jstl</groupId>
+   				 <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+   				 <version>1.2.1</version>
+  			  <scope>provided</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
