@@ -124,7 +124,7 @@
 
             <button type="submit">Convert</button>
             <!-- Back Button with styling -->
-            <a href="${pageContext.request.contextPath}/stillWorking" class="button">Back</a>
+            <a href="${pageContext.request.contextPath}/" class="button">Back</a>
         </form>
     </div>
 
