@@ -28,7 +28,7 @@ public class WeatherController {
 	private static final String news_api_url="https://newsapi.org/v2/top-headlines?country=us&apiKey="+N_API_KEY;
 
 
-	@RequestMapping("/")
+	@RequestMapping({"/","MyApps"})
 	public String homePage() {
 		return "home";
 	}
