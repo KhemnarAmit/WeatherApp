@@ -134,9 +134,9 @@
 
         <!-- Currency Exchange App -->
         <div class="app-container">
-            <h2>Currency Exchange App</h2>
+            <h2>Currency Exchange Rate App</h2>
             <a class="app-button" href="${pageContext.request.contextPath}/currencyExchangeHome">
-                Currency Exchange App
+                Check Exchange Rate Here
             </a>
         </div>
 
