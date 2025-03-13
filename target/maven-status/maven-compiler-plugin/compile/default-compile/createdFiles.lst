@@ -1,4 +1,5 @@
 com\project\weather\CurrencyResponse.class
+com\project\weather\NewsItem.class
 com\project\weather\WeatherService.class
 com\project\weather\WeatherResponse$Clouds.class
 com\project\weather\WeatherController.class
@@ -6,4 +7,5 @@ com\project\weather\WeatherResponse$Main.class
 com\project\weather\CurrencyService.class
 com\project\weather\WeatherResponse$Weather.class
 com\project\weather\WeatherResponse.class
+com\project\weather\NewsApiResponse.class
 com\project\weather\WeatherResponse$Wind.class
