@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather, Currency Exchange, and News Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         /* Overall Page Styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -17,9 +19,9 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background: url('https://example.com/your-image.jpg') no-repeat center center fixed; /* Replace with your image */
+            background: url('https://example.com/light-background.jpg') no-repeat center center fixed; /* Light background image */
             background-size: cover;
-            color: #fff; /* White text to contrast against the dark overlay */
+            color: #333;
             position: relative;
         }
 
@@ -31,7 +33,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            background: rgba(255, 255, 255, 0.8); /* Light overlay */
             z-index: -1; /* Behind the content */
         }
 
@@ -46,7 +48,7 @@
 
         /* App Container (Card Style) */
         .app-container {
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
             border-radius: 15px;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             padding: 25px;
@@ -130,6 +132,13 @@
             margin: 40px 0;
         }
 
+        /* Icons for each app */
+        .app-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #00bcd4;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .app-container {
@@ -146,7 +155,6 @@
                 font-size: 1.1em;
             }
         }
-
     </style>
 </head>
 <body>
@@ -154,6 +162,7 @@
     <div class="content-wrapper">
         <!-- Weather App -->
         <div class="app-container">
+            <i class="fas fa-cloud-sun app-icon"></i>
             <h2>Weather App</h2>
             <form action="weather" method="get">
                 <div class="form-group">
@@ -162,7 +171,6 @@
                 </div>
                 <button type="submit">Get Weather</button>
             </form>
-            <p class="error-message">${error}</p>
         </div>
 
         <!-- Separator -->
@@ -170,7 +178,26 @@
 
         <!-- Currency Exchange App -->
         <div class="app-container">
+            <i class="fas fa-dollar-sign app-icon"></i>
             <h2>Currency Exchange Rate App</h2>
             <a class="app-button" href="${pageContext.request.contextPath}/currencyExchangeHome">
                 Check Exchange Rate Here
-          
+            </a>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator"></div>
+
+        <!-- News App -->
+        <div class="app-container">
+            <i class="fas fa-newspaper app-icon"></i>
+            <h2>News App</h2>
+            <form action="news" method="get">
+                <button type="submit">Check Today's One Top News</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
